@@ -4,11 +4,11 @@ import sys, os
 from random import shuffle
 import torch
 import torch.nn as nn
-from models.gat import GATNet
-from models.gat_gcn import GAT_GCN
-from models.gcn import GCNNet
-from models.ginconv import GINConvNet
-from utils import *
+from experiments.gat import GATNet
+from experiments.gat_gcn import GAT_GCN
+from experiments.gcn import GCNNet
+from experiments.ginconv import GINConvNet
+from data.utils import *
 
 # training function at each epoch
 def train(model, device, train_loader, optimizer, epoch):
